@@ -1,0 +1,13 @@
+
+# Explain this File and its purpose
+# ADD A volume to the path /var/http/logs/myproject
+version: '3.4'
+
+services:
+  challanges:
+    image: challanges
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
